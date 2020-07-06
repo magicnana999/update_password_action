@@ -5,11 +5,11 @@ inputs:
   dest:
     description: 'Target directory'
     required: true
-    default: 'src/main/resources/dev/**/application.yaml'
+    default: '**/application.yaml'
   pairs:
     description: 'Pairs of [key:secret]'
     required: true
-    default: 'database_name:database_test;redis_name:redis_test'
+    default: 'database_name:${{ secrets.DATABASE_TEST}};redis_name:${{ secrets.REDIS_TEST}}'
 runs:
   using: 'docker'
   image: 'Dockerfile'
