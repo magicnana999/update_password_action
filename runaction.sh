@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo 11
 echo $INPUT_DEST
 echo $INPUT_PAIRS
 echo `pwd`
