@@ -4,6 +4,8 @@ echo $INPUT_DEST
 echo $INPUT_PAIRS
 echo `pwd`
 echo `update starting...`
+echo `ls -alFs`
+
 string=$INPUT_PAIRS
 array=(${string//,/ })
 
