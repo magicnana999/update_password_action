@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo $INPUT_DEST
+echo $INPUT_PAIRS
+
 string=$INPUT_PAIRS
 array=(${string//,/ })
 

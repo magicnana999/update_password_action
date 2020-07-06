@@ -9,7 +9,7 @@ inputs:
   pairs:
     description: 'Pairs of [key:secret]'
     required: true
-    default: 'database_name:${{ secrets.DATABASE_TEST}};redis_name:${{ secrets.REDIS_TEST}}'
+    default: 'database_name:${{ secrets.DATABASE_TEST }};redis_name:${{ secrets.REDIS_TEST }}'
 runs:
   using: 'docker'
   image: 'Dockerfile'
