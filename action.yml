@@ -1,0 +1,18 @@
+name: 'Update password action'
+author: 'https://github.com/magicnana999'
+description: 'Update password with Secret in Action'
+inputs:
+  dest:
+    description: 'Target directory'
+    required: true
+    default: 'src/main/resources/dev/**/application.yaml'
+  pairs:
+    description: 'Pairs of [key:secret]'
+    required: true
+    default: 'database_name:database_test;redis_name:redis_test'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'terminal'
+  color: 'gray-dark'
