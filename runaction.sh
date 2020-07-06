@@ -17,7 +17,7 @@ do
 done
 echo "OK"
 
-`cat example1/application.yaml`
-`cat example2/application.yaml`
+cat example1/application.yaml
+cat example2/application.yaml
 
 
