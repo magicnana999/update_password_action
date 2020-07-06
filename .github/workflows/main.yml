@@ -20,7 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: magicnana999/update_password_action@v2
+    - uses: magicnana999/update_password_action@master
       with:
         pairs: 'database_name:${{ secrets.DATABASE_TEST}},redis_name:${{ secrets.REDIS_TEST}}'  
 
