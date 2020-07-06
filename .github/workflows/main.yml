@@ -20,7 +20,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: magicnana999/update_password_action@master
       with:
-        pairs: 'database_name:${{ secrets.DATABASE_TEST}},redis_name:${{ secrets.REDIS_TEST}}'  
+        pairs: 'database_name:${{ secrets.DATABASE_TEST}},redis_name:${{ secrets.REDIS_TEST}}'
+        dest: '**/application.yaml'
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
