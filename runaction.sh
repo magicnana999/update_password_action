@@ -3,7 +3,7 @@ echo 11
 echo $INPUT_DEST
 echo $INPUT_PAIRS
 echo `pwd`
-echo `ls -alFs`
+echo `ls`
 echo "starting..."
 
 string=$INPUT_PAIRS
