@@ -16,3 +16,8 @@ do
    sed -i "s#$key#$value#g" `grep $key -rl $INPUT_DEST`
 done
 echo "OK"
+
+`cat example1/application.yaml`
+`cat example2/application.yaml`
+
+
