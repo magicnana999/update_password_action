@@ -2,7 +2,8 @@
 
 echo $INPUT_DEST
 echo $INPUT_PAIRS
-
+echo `pwd`
+echo `update starting...`
 string=$INPUT_PAIRS
 array=(${string//,/ })
 
@@ -12,3 +13,4 @@ do
    value=${var#*:}
    sed -i "s#$key#$value#g" `grep $key -rl $INPUT_DEST`
 done
+echo `update OK`
